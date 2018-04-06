@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    float: right;
+    position: relative;
+    left: -50%;
+    text-align: left;
+}
+
+.navbar ul{
+    text-align: center;
+    position: relative;
+    list-style: none;
+    left: 50%;
+    margin-top: 10px;
+    user-select: none;
+}
+
+.navbar ul li {
+    margin-right: 30px;
+    float: left;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.navbar ul li a.current {
+    border-bottom: #aeaeae solid 3px;
+    padding-bottom: 8px;
+}
+
+.navbar ul li a:hover {
+    border-bottom: #aeaeae solid 3px;
+    padding-bottom: 8px;
+}
+
+.top {
+    position: absolute;
+    top: 0px;
+
+}
+
+a.lift {
+    position: fixed;
+    bottom: -50px;
+    right: -50px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+    background-color: #aeaeae;
+}
+
+/*ホーム*/
+
+p.home {
+    position: absolute;
+    left: 50px;
+    top: 100px;
+}
+
+
+/*ユーザー*/
+
+.admin {
+    width:800px; 
+    margin:0 auto;
+    border: 1px solid #90e6e9;
+    background-color: #f8ffff;
+    color: #5e5e5e;
+    
+    position: relative;
+    top: 100px;
+}
+
+.admin .context {
+    padding: 50px;
+}
+
+.admin a {
+    text-decoration: none;
+}
+
+.admin .adminicon{
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(Images/adminicon.png);
+    float: left;
+    border: 8px solid #e7e7e7;
+    margin: 20px 20px 10px 0px;
+}
+
+
+/*グッズ情報*/
+
+a.mapinfo {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 5px;
+    
+    background: #90E6E9;
+    border-radius: 2px;
+    height: 40px;
+    width: 250px;
+}
+
+iframe#merchmap {
+    position: absolute;
+    top: 110px; 
+    
+    width: 100%;
+    height: 100%;
+}
+
+
+/*Wiki*/
+
+.wiki {
+    position: absolute;
+    top: 90px;
+    
+}
+
+.sidebar {
+    position: fixed;
+    left: 25px;
+    width: 185px;
+    border: 1px #000 solid;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 20px;
+    user-select: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 5px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+}
+
+.sidebar ul li p.title {
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.main {
+    position: absolute;
+    left: 250px;
+    width: 900px;
+}
+
+.main h3 {
+    position: relative;
+    margin-bottom: 10px;
+    width: 900px;
+    border-left: 5px #b0b0b0 solid;
+    padding-left: 10px;
+}
+
+span.bold {
+    font-weight: bold;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+}
+
+table#table1 {
+    display: none;
+}
+
+a.showtitle {
+    text-decoration: none;
+}
+
+button.toggler {
+    background-color: #000;
+    border: none;
+    color: white;
+    padding: 2px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+br {
+    user-select: none;
+}
+
+
+
+
