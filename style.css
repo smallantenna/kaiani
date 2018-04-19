@@ -7,6 +7,15 @@ a {
     text-decoration: none;
 }
 
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+}
+
 .navbar {
     float: right;
     position: relative;
@@ -103,6 +112,44 @@ p.home {
     margin: 20px 20px 10px 0px;
 }
 
+/*翻訳*/
+
+.honcon {
+    width:800px; 
+    margin:0 auto;
+    border: 1px solid #5e5e5e;
+    border-bottom: 1px solid transparent;
+    color: #5e5e5e;
+    
+    position: relative;
+    top: 100px;
+    
+    
+    margin-bottom: 50px;
+}
+
+.honcon iframe {
+    margin-top: -34px;
+    margin-bottom: -6px;
+}
+
+.honcon table {
+    width:  801px;
+    border: 1px solid transparent;
+   
+}
+
+.honcon  td.name {
+    border-left: 1px solid transparent;
+    width: 100px;
+}
+
+.honcon  td.dialogue {
+    border-right: 1px solid transparent;
+}
+
+
+
 
 /*グッズ情報*/
 
@@ -187,14 +234,7 @@ span.bold {
     font-weight: bold;
 }
 
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
 
-th, td {
-    padding: 15px;
-}
 
 table#table1 {
     display: none;
