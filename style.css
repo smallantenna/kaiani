@@ -1,10 +1,20 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: YuGothic,'Yu Gothic',sans-serif;
+}
+
+body {
+    background-color: #fcfcfc;
+}
+
+p{
+    font-family: YuGothic,'Yu Gothic',sans-serif;
 }
 
 a {
     text-decoration: none;
+    color: #1a74ca;
 }
 
 table, th, td {
@@ -41,16 +51,16 @@ th, td {
 .navbar ul li a {
     text-decoration: none;
     color: #000000;
+    padding: 5px;
 }
 
 .navbar ul li a.current {
-    border-bottom: #aeaeae solid 3px;
-    padding-bottom: 8px;
+    background-color: #d8f0ef;
 }
 
 .navbar ul li a:hover {
-    border-bottom: #aeaeae solid 3px;
-    padding-bottom: 8px;
+    background-color: #d8f0ef;
+    
 }
 
 .top {
@@ -72,10 +82,57 @@ a.lift {
 
 /*ホーム*/
 
-p.home {
+body.home {
+     width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.box {
+    background-color: #A1DBD8;
+    border-color: #fff;
+    border-style: solid;
+    
+}
+
+.box a {
+    color: #fff;
+}
+
+body.home #translation {
+    width: 65%;
+    height: 50vh;
     position: absolute;
-    left: 50px;
-    top: 100px;
+    top: 0;
+    left: 0;
+    border-width: 0px 3px 0px 0px;
+}
+
+body.home #merchmap {
+    width: 35%;
+    height: 75vh;
+    position: absolute;
+    top: 0;
+    left: 65%;
+    border-width: 0px 3px 0px 3px;
+}
+
+body.home #wiki_2 {
+    width: 65%;
+    height: 50vh;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border-width: 3px 0px 0px 0px;
+}
+
+body.home #about {
+    width: 35%;
+    height: 25vh;
+    position: absolute;
+    top: 75%;
+    left: 65%;
+    border-width: 3px 0px 0px 3px;
 }
 
 
@@ -84,8 +141,14 @@ p.home {
 .admin {
     width:800px; 
     margin:0 auto;
-    border: 1px solid #90e6e9;
-    background-color: #f8ffff;
+    border: 1px solid rgba(144, 230, 233);
+    background: repeating-linear-gradient(
+                135deg,
+                rgba(255,255,255, 0.4),
+                rgba(255,255,255, 0.4) 10px,
+                rgba(144, 230, 233, 0.25) 10px,
+                rgba(144, 230, 233, 0.25) 20px
+                );
     color: #5e5e5e;
     
     position: relative;
@@ -100,6 +163,14 @@ p.home {
     text-decoration: none;
 }
 
+.admin p.title {
+    font-size: 15px;
+   margin-bottom: 10px;
+    font-weight: bold;
+    color: #7f7f7f;
+    
+}
+
 .admin .adminicon{
     width: 80px;
     height: 80px;
@@ -108,8 +179,8 @@ p.home {
     background-repeat: no-repeat;
     background-image: url(Images/adminicon2.png);
     float: left;
-    border: 8px solid #e7e7e7;
-    margin: 20px 20px 10px 0px;
+    border: 8px solid #e3f8f9;
+    margin: 20px 45px 10px 0px;
 }
 
 /*翻訳*/
@@ -154,28 +225,30 @@ p.home {
 /*グッズ情報*/
 
 a.mapinfo {
-    position: absolute;
-    top: 50px;
-    right: 10px;
+    position: fixed;
+   bottom: 30px;
+    right: 30px;
     
-    color: #fff;
+    color: #5e5e5e;
     font-size: 20px;
     text-decoration: none;
     text-align: center;
     padding-top: 5px;
     
-    background: #90E6E9;
+    background: #fff;
+    border: 2px solid #5e5e5e;
     border-radius: 2px;
     height: 40px;
     width: 250px;
+    z-index: 50;
 }
 
 iframe#merchmap {
     position: absolute;
-    top: 110px; 
+    top: 80px; 
     
     width: 100%;
-    height: 100%;
+    height: 90%;
 }
 
 
@@ -226,7 +299,7 @@ iframe#merchmap {
     position: relative;
     margin-bottom: 10px;
     width: 900px;
-    border-left: 5px #b0b0b0 solid;
+    border-left: 5px #A1DBD8 solid;
     padding-left: 10px;
 }
 
@@ -245,8 +318,8 @@ a.showtitle {
 }
 
 button.toggler {
-    background-color: #000;
-    border: none;
+    background-color:#9fb7c5;
+    border: #9fb7c5 solid 1px;
     color: white;
     padding: 2px 8px;
     text-align: center;
