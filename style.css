@@ -88,51 +88,71 @@ body.home {
     overflow: hidden;
 }
 
-.box {
-    background-color: #A1DBD8;
-    border-color: #fff;
-    border-style: solid;
+.topbar {
+    background-color: #d8f0ef;
+    height: 100px;
+    width: 100%;
+    position:relative;
+}
+
+.topbar p {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    font-size: 30px;
     
 }
 
-.box a {
-    color: #fff;
+body.home .box {
+    background-color: #d8f0ef;
 }
 
-body.home #translation {
-    width: 65%;
-    height: 50vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-width: 0px 3px 0px 0px;
+body.home .box a {
+    padding: 10px;
+    color: #5e5e5e;
 }
 
-body.home #merchmap {
-    width: 35%;
-    height: 75vh;
-    position: absolute;
-    top: 0;
-    left: 65%;
-    border-width: 0px 3px 0px 3px;
+body.home #translation, #merchmap_2, #wiki_2 {
+    float: left;
+    height: 300px;
+    width: 300px;
+    margin-right:50px;
+    
+    border: solid 3px #d8f0ef;
 }
 
-body.home #wiki_2 {
-    width: 65%;
-    height: 50vh;
+.box1 {
     position: absolute;
-    top: 50%;
-    left: 0;
-    border-width: 3px 0px 0px 0px;
+    top: 150px;
+    left: 50%;
+    margin-left: -500px;
+}
+
+.box2 {
+    position:absolute;
+    top: 500px;
+    left: 50%;
+    margin-left: -500px;
 }
 
 body.home #about {
-    width: 35%;
-    height: 25vh;
+    height: 100px;
+    width: 1018px;
+    
+    border: solid 3px #d8f0ef;
+}
+
+
+.box #merchmapicon {
+    background: no-repeat 0 0 url(Images/mapicongray.png);
+    background-size: cover;
+    width: 160px;
+    height: 160px;
     position: absolute;
-    top: 75%;
-    left: 65%;
-    border-width: 3px 0px 0px 3px;
+    top: 50px;
+    left: 50%;
+    margin-left: -105px;
 }
 
 
@@ -181,6 +201,11 @@ body.home #about {
     float: left;
     border: 8px solid #e3f8f9;
     margin: 20px 45px 10px 0px;
+}
+
+.info {
+    position: absolute;
+    bottom: 50px;
 }
 
 /*翻訳*/
