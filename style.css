@@ -88,6 +88,11 @@ body.home {
     overflow: hidden;
 }
 
+.box p.title {
+    font-size: 18px;
+    margin-left: 8px;
+}
+
 .topbar {
     background-color: #d8f0ef;
     height: 100px;
@@ -106,9 +111,14 @@ body.home {
 
 body.home .box {
     background-color: #d8f0ef;
+    transition: 0.3s;
 }
 
-body.home .box a {
+body.home .box:hover {
+    background-color: #fff;
+}
+
+body.home .box p {
     padding: 10px;
     color: #5e5e5e;
 }
@@ -124,35 +134,63 @@ body.home #translation, #merchmap_2, #wiki_2 {
 
 .box1 {
     position: absolute;
-    top: 150px;
+    top: 200px;
     left: 50%;
     margin-left: -500px;
 }
 
 .box2 {
     position:absolute;
-    top: 500px;
+    top: 550px;
     left: 50%;
     margin-left: -500px;
 }
 
 body.home #about {
-    height: 100px;
+    height: 50px;
     width: 1018px;
     
     border: solid 3px #d8f0ef;
 }
 
 
+.box .icon{
+    background-size: cover;
+    position: absolute;
+}
+
 .box #merchmapicon {
-    background: no-repeat 0 0 url(Images/mapicongray.png);
+    background: no-repeat 0 0 url(Images/mapicon.png);
+   background-size: cover;
+    width: 150px;
+    height: 150px;
+    
+    top: 55px;
+    left: 50%;
+    margin-left: -105px;
+}
+
+
+.box #translationicon {
+    background: no-repeat 0 0 url(Images/translationicon.png);
     background-size: cover;
     width: 160px;
     height: 160px;
-    position: absolute;
+    
     top: 50px;
-    left: 50%;
-    margin-left: -105px;
+  
+    margin-left: 65px;
+}
+
+.box #wikiicon {
+    background: no-repeat 0 0 url(Images/wikiicon.png);
+    background-size: cover;
+    width: 140px;
+    height: 140px;
+    
+    top: 60px;
+  
+    margin-left: 65px;
 }
 
 
