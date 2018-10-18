@@ -88,11 +88,6 @@ body.home {
     overflow: hidden;
 }
 
-.box p.title {
-    font-size: 18px;
-    margin-left: 8px;
-}
-
 .topbar {
     background-color: #d8f0ef;
     height: 100px;
@@ -121,6 +116,18 @@ body.home .box:hover {
 body.home .box p {
     padding: 10px;
     color: #5e5e5e;
+}
+
+.box p.title {
+    font-size: 18px;
+    margin-left: 8px;
+}
+
+.box p.description {
+    position: absolute;
+    bottom: 10px;
+    width: 280px;
+    padding: 25px;
 }
 
 body.home #translation, #merchmap_2, #wiki_2 {
@@ -193,6 +200,12 @@ body.home #about {
     margin-left: 65px;
 }
 
+
+.box2 #about p.description{
+    position: absolute;
+    top: 5px;
+    left: 83px;
+}
 
 /*ユーザー*/
 
