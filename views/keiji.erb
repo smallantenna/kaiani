@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117119811-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-117119811-1');
+</script>
+
+   <link rel="stylesheet" href="/stylesheets/style.css">
+    <meta charset="UTF-8">
+    <title>掲示板 - kaiani</title>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+           <li><a href="/">ホーム</a></li>
+            <li><a href="/keiji" class="current">掲示板</a></li>
+            <li><a href="/honyaku">翻訳</a></li>
+            <li><a href="/chizu">グッズ情報</a></li>
+            <li><a href="/wiki">Wiki</a></li>
+            <li><a href="/user">About</a></li>
+        </ul>
+    </div>
+
+    <p>
+   <a href="/keiji/new" class="postbutton">投稿する</a>
+    </p>
+<form action="/keiji/search/" method="post">
+    <input type="text" name="keyword" placeholder="タグ">
+    <input type="submit" value="検索">
+</form>
+
+    <div>
+        <div>
+            <div>
+                <table class="keijitable">
+                    <% @posts.each do |post| %>
+                    <thead>
+                        <tr>
+                            <th><%= CGI.escapeHTML(post.title) %></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><%= CGI.escapeHTML(post.content) %></td>
+                            <td>
+                            <% posttags = PostTag.where(page_id: post.id) %>
+                            <% posttags.each do |posttag| %>
+                                <% tagid = posttag.tag_id %>
+                                <% tagname = Tag.find(tagid).name %>
+                                <%= tagname %>
+                            <% end %>
+                            </td>
+                            <td><form action="/keiji/<%= post.id %>/delete" method="post"><input type="submit" value="delete"></form></td>
+                        </tr>
+                    </tbody>
+                    <% end %>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
